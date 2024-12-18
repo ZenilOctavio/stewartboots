@@ -10,9 +10,23 @@ export default {
     extend: {
       colors: {
         background: "var(--background)",
+        backgroundSecondary: "var(--background-secondary)",
         foreground: "var(--foreground)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        tertiary: "var(--tertiary)",
       },
+      animation: {
+        slideInLeft: "slide-in-left 0.5s ease-in-out 0s forwards",
+        slideInRight: "slide-in-right 0.5s ease-in-out",
+        slideOutLeft: "slideOutLeft 0.5s ease-in-out",
+        slideOutRight: "slide-out-right 0.5s ease-in-out 0s forwards",
+      }
     },
+    fontFamily: {
+      roboto: "var(--font-roboto)",
+      pdisplay: "var(--font-playfair-display)"
+    }
   },
   plugins: [],
 } satisfies Config;
