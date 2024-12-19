@@ -13,6 +13,7 @@ export default {
         backgroundSecondary: "var(--background-secondary)",
         foreground: "var(--foreground)",
         primary: "var(--primary)",
+        footerForeground: "var(--footer-foreground)",
         secondary: "var(--secondary)",
         tertiary: "var(--tertiary)",
       },

@@ -4,3 +4,8 @@ export const websiteNavItems = [
   { content: "ABOUT", href: "/about" },
   { content: "CONTACT", href: "/contact" }
 ]
+
+export const socialMediaLinks = [
+  { content: "INSTAGRAM", href: "https://www.instagram.com/zeniloctavio/" },
+  { content: "FACEBOOK", href: "https://www.facebook.com/octavio.zenillopez/" }
+]

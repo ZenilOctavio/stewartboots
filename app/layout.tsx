@@ -12,7 +12,7 @@ const playfairDisplay = Playfair_Display({
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["100", "300", "400", "700"],
 });
 
 
@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfairDisplay.variable} ${roboto.variable} antialiased`}
+        className={`${playfairDisplay.variable} ${roboto.variable} antialiased min-h-screen flex flex-col`}
       >
         <Header />
         <main
