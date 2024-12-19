@@ -20,7 +20,7 @@ function WebsiteNavbarItem({ content, href, active = false }: NavbarItemProps) {
       className={
         clsx(
           "capitalize font-pdisplay p-2 text-background font-semibold md:text-lg",
-          { "bg-background text-backgroundSecondary rounded-t": active }
+          { "bg-background text-backgroundSecondary md:rounded-t": active }
         )
       }
     >{content}</Link>
@@ -38,7 +38,7 @@ interface ExternalNavbarItemProps extends React.AnchorHTMLAttributes<HTMLAnchorE
 function ExternalNavbarItem({ content, Icon, ...props }: ExternalNavbarItemProps) {
 
   return (
-    <a className="flex gap-2 text-background text-sm items-center cursor-pointer md:text-lg" {...props}>
+    <a className="flex gap-2 text-background text-xs items-center cursor-pointer md:text-md pb-2" {...props}>
       <Icon className="w-5 h-5" />
       <span>{content}</span>
     </a>
@@ -99,20 +99,24 @@ export function Navbar({ className = "" }: NavbarProps) {
             )
           })
         }
-        {
-          externalNavItems.map((item, index) => {
-            return (
-              <li key={item.href} className={index == 0 ? "ml-auto" : ""}>
-                <ExternalNavbarItem
+        <div
+          className="self-end flex gap-5 ml-auto"
+        >
+          {
+            externalNavItems.map((item, index) => {
+              return (
+                <li key={item.href} className={index == 0 ? "ml-auto" : ""}>
+                  <ExternalNavbarItem
 
-                  {...item}
-                >
+                    {...item}
+                  >
 
-                </ExternalNavbarItem>
-              </li>
-            )
-          })
-        }
+                  </ExternalNavbarItem>
+                </li>
+              )
+            })
+          }
+        </div>
       </ul>
     </nav>
   )

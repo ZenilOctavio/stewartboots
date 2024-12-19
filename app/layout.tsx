@@ -33,7 +33,7 @@ export default function RootLayout({
       >
         <Header />
         <main
-          className="mt-14 md:mt-24 p-4 md:px-20"
+          className="mt-14 md:mt-24"
         >
           {children}
         </main>
