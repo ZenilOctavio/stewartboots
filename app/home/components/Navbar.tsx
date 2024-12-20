@@ -19,7 +19,7 @@ function WebsiteNavbarItem({ content, href, active = false }: NavbarItemProps) {
       href={href}
       className={
         clsx(
-          "capitalize font-pdisplay p-2 text-background font-semibold md:text-lg",
+          "capitalize font-pdisplay px-2 pb-1 text-background font-semibold md:text-lg",
           { "bg-background text-backgroundSecondary md:rounded-t": active }
         )
       }

@@ -1,24 +1,7 @@
 import Link from "next/link";
 import { socialMediaLinks, websiteNavItems } from "../constants";
-import { FacebookIcon, InstagramIcon } from "../icons/SocialMedia";
-import { CircleFadingPlusIcon } from 'lucide-react'
+import { socialMediaIconMapper } from "../constants";
 
-const socialMediaIconMapper = (name: string) => {
-
-  const key = name.toLowerCase()
-
-  switch (key) {
-
-    case 'facebook':
-      return FacebookIcon
-    case 'instagram':
-      return InstagramIcon
-    default:
-      return CircleFadingPlusIcon
-
-  }
-
-}
 
 export function Footer() {
   return (
