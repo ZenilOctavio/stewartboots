@@ -6,31 +6,31 @@
 // import Image from "next/image";
 // import Link from "next/link";
 // import { Product } from "../components/Product";
-import { notFound, redirect, usePathname, useSearchParams } from "next/navigation";
-import products from '@/app/mock/products.json'
-import { useEffect } from "react";
-import { useRouter } from 'next/navigation'
+import { redirect } from "next/navigation";
+// import products from '@/app/mock/products.json'
+// import { useEffect } from "react";
+// import { useRouter } from 'next/navigation'
 // import clsx from "clsx";
 
 
-const searchParamImage = 'image'
+// const searchParamImage = 'image'
 
 export default function ProductPage() {
 
 
-  const searchParams = useSearchParams()
-  const { replace, refresh } = useRouter()
-  const pathname = usePathname()
-  const id = Number(searchParams.get('id'))
-  const currentImage = Number(searchParams.get(searchParamImage))
+  // const searchParams = useSearchParams()
+  // const { replace, refresh } = useRouter()
+  // const pathname = usePathname()
+  // const id = Number(searchParams.get('id'))
+  // const currentImage = Number(searchParams.get(searchParamImage))
 
   // const otherProducts = products.filter(product => product.id !== id).slice(0, 3)
 
 
 
-  useEffect(() => {
-    replace(`${pathname}?id=${id}&image=0`)
-  }, [])
+  // useEffect(() => {
+  //   replace(`${pathname}?id=${id}&image=0`)
+  // }, [])
 
   // const handleSetImage = (imageIndex: number) => {
   //   const params = new URLSearchParams(searchParams)
@@ -47,22 +47,22 @@ export default function ProductPage() {
 
   // }
 
-  if (!id) {
-    return notFound()
-  }
+  // if (!id) {
+  //   return notFound()
+  // }
 
-  if (isNaN(id)) {
-    return notFound()
-  }
-  if (isNaN(currentImage)) {
-    refresh()
-  }
+  // if (isNaN(id)) {
+  //   return notFound()
+  // }
+  // if (isNaN(currentImage)) {
+  //   refresh()
+  // }
 
-  const product = products.find(product => product.id === id)
+  // const product = products.find(product => product.id === id)
 
-  if (!product) {
-    return notFound()
-  }
+  // if (!product) {
+  //   return notFound()
+  // }
 
   return redirect('/')
 
