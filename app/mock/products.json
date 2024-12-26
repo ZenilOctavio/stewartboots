@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "Texas style boots",
+    "category": "men",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "images": [
+      "/products/boot1-1.png",
+      "/products/boot1-2.png",
+      "/products/boot1-3.png"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "California style boots",
+    "category": "men",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "images": [
+      "/products/boot2-1.png",
+      "/products/boot2-2.png",
+      "/products/boot2-3.png"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "New Mexico style boots",
+    "category": "men",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "images": [
+      "/products/boot3-1.png",
+      "/products/boot3-2.png",
+      "/products/boot3-3.png"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Georgia style boots",
+    "category": "men",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "images": [
+      "/products/boot4-1.png",
+      "/products/boot4-2.png",
+      "/products/boot4-3.png"
+    ]
+  }
+]

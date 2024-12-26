@@ -1,7 +1,7 @@
 import { ArrowUpRight, Phone } from "lucide-react";
 import { Button } from "../ui/Button";
 import Image from "next/image";
-import { NewLocationMap } from "../home/components/NewLocationMap";
+import { NewLocationMap } from "../components/NewLocationMap";
 
 export default function AboutPage() {
 
@@ -26,7 +26,7 @@ export default function AboutPage() {
       </article>
 
 
-      <section className="flex flex-col gap-16">
+      <section className="flex flex-col gap-16 p-3">
         <div className="flex flex-col md:flex-row gap-8 justify-between items-center">
           <figure className="basis-1/3">
             <Image

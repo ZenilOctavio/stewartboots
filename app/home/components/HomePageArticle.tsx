@@ -1,5 +1,5 @@
 import React from "react"
-import { RoundedIcon } from "./RoundedIcon"
+import { RoundedIcon } from "../../components/RoundedIcon"
 
 interface HomePageArticle {
   title: string

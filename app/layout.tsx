@@ -1,13 +1,21 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Roboto } from "next/font/google";
+import { Playfair_Display, Roboto, Rye, Pinyon_Script } from "next/font/google";
 import "./globals.css";
-import { Header } from "./home/components/Header";
-import { Footer } from "./home/components/Footer";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display",
   subsets: ["latin"],
 });
+
+const customFont = Rye({
+  variable: '--font-custom',
+  subsets: ["latin", "latin-ext"],
+  weight: ["400"],
+  style: "normal",
+  display: "auto"
+})
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -29,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfairDisplay.variable} ${roboto.variable} antialiased min-h-screen flex flex-col`}
+        className={`${playfairDisplay.variable} ${customFont.variable} ${roboto.variable} antialiased min-h-screen flex flex-col`}
       >
         <Header />
         <main

@@ -26,6 +26,7 @@ export default {
     },
     fontFamily: {
       roboto: "var(--font-roboto)",
+      custom: "var(--font-custom)",
       pdisplay: "var(--font-playfair-display)"
     }
   },

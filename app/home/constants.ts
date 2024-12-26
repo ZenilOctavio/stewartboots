@@ -12,10 +12,17 @@ export const socialMediaLinks = [
   { content: "FACEBOOK", href: "https://www.facebook.com/octavio.zenillopez/" }
 ]
 
+export const contactDictionary = {
+  'location': { name: 'Location', data: '4939 E 29th ST' },
+  'phone': { name: 'Phone number', data: '(520) 622-2706' },
+  'email': { name: 'Email', data: 'lorem@ipsum.com' },
+
+}
+
 export const contactData = [
-  { name: 'Location', data: '4939 E 29th ST' },
-  { name: 'Phone number', data: '(520) 622-2706' },
-  { name: 'Email', data: 'lorem@ipsum.com' },
+  contactDictionary['location'],
+  contactDictionary['phone'],
+  contactDictionary['email'],
 ]
 
 export const socialMediaIconMapper = (name: string) => {

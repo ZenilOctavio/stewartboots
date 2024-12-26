@@ -3,12 +3,12 @@ import { Button } from "./ui/Button";
 import Image from "next/image";
 import { HomePageArticle } from "./home/components/HomePageArticle";
 import Link from "next/link";
-import { Testimonial } from "./home/components/Textimonial";
+import { Testimonial } from "./home/components/Testimonial";
 
 export default function Home() {
   return (
     <div className="py-10 w-full flex flex-col gap-10">
-      <h3 className="font-light text-xl md:text-3xl text-center">Footware designed to the proper care of your feet</h3>
+      <h3 className="font-light text-xl md:text-3xl text-center"><i className="font-pdisplay">&quot;Footware designed to the proper care of your feet&quot;</i></h3>
 
       <article
         className="bg-secondary flex flex-col md:flex-row justify-center md:justify-between items-center"
@@ -31,6 +31,7 @@ export default function Home() {
           />
         </figure>
       </article>
+
 
       <section
         className="w-full flex flex-col items-center justify-between gap-5"
@@ -79,10 +80,26 @@ export default function Home() {
           </figure>
         </main>
         <footer>
-          <Link href="/" className="text-sm underline">Discover more foot conditions we treat</Link>
+          <Link href="/about/foot-conditions" className="text-sm underline">Discover more foot conditions we treat</Link>
         </footer>
       </section>
 
+      <hr className="border-backgroundSecondary mx-8" />
+      <article
+        className="bg-secondary flex flex-col md:flex-row justify-center md:justify-between items-center"
+      >
+        <main className="flex flex-col gap-2 justify-between p-4 md:p-10">
+
+          <span>
+            <p>Our footwear are made by artisanal bootmakers, using hand tools and vintage machinery.</p>
+
+            <p>Each pair is designed for comfort and to eliminate foot pain.</p>
+
+            <p><strong> Prices start at $3,400</strong>. A precise understanding and measurement of your feet take between 2 and 3 hours.</p>
+          </span>
+
+        </main>
+      </article>
       <hr className="border-backgroundSecondary mx-8" />
 
       <section className="flex flex-col items-center gap-10 px-6">

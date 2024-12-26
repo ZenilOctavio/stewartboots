@@ -1,6 +1,6 @@
-import { ContactItem } from "../home/components/ContactItem";
-import { NewLocationMap } from "../home/components/NewLocationMap";
-import { RoundedIcon } from "../home/components/RoundedIcon";
+import { ContactItem } from "./components/ContactItem";
+import { NewLocationMap } from "../components/NewLocationMap";
+import { RoundedIcon } from "../components/RoundedIcon";
 import { contactData, contactDataIconMapper, socialMediaLinks } from "../home/constants";
 import { socialMediaIconMapper } from "../home/constants";
 
