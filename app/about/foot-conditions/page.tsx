@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import Image from "next/image";
+import { redirect } from "next/navigation";
 
 interface FootConditionItemProps {
   title: string
@@ -11,6 +12,8 @@ interface FootConditionItemProps {
 }
 
 function FootConditionItem({ title, content, imageSrc, imageAlt, itemId, imageClassName = "" }: FootConditionItemProps) {
+
+
   return (
     <li id={itemId} className="gap-4 basis-3/5 flex flex-col md:flex-row items-center justify-between w-full">
       <figure>
@@ -35,6 +38,7 @@ function FootConditionItem({ title, content, imageSrc, imageAlt, itemId, imageCl
 
 
 export default function FootConditionsPage() {
+  redirect('/')
 
   return (
     <div className="pt-10 w-full flex flex-col gap-10 py-16">

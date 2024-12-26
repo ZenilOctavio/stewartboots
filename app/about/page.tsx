@@ -5,6 +5,7 @@ import { NewLocationMap } from "../components/NewLocationMap";
 
 export default function AboutPage() {
 
+
   return (
     <div
       className="py-10 w-full flex flex-col gap-10"

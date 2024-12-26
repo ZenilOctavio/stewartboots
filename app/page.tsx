@@ -52,7 +52,7 @@ export default function Home() {
             <li className="self-end">
               <HomePageArticle
                 title="Foot Problems"
-                content={<>We offer solutions for 15 of the most common foot problems, including <strong>bunions</strong>, <strong>hammertoes</strong>, and <strong>heel spurs</strong>.</>}
+                content={<>We offer solutions for 15 of the most common foot problems. We assure you comfort since the first step.</>}
                 Icon={Footprints}
               />
 
@@ -79,9 +79,9 @@ export default function Home() {
             </figcaption>
           </figure>
         </main>
-        <footer>
+        {/* <footer>
           <Link href="/about/foot-conditions" className="text-sm underline">Discover more foot conditions we treat</Link>
-        </footer>
+        </footer> */}
       </section>
 
       <hr className="border-backgroundSecondary mx-8" />

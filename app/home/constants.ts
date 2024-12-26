@@ -2,10 +2,12 @@ import { FacebookIcon, InstagramIcon } from "@/app/home/icons/SocialMedia";
 import { CircleFadingPlusIcon, Mail, MapPin, Phone } from 'lucide-react'
 export const websiteNavItems = [
   { content: "HOME", href: "/" },
-  { content: "PRODUCTS", href: "/products" },
+  // { content: "PRODUCTS", href: "/products" },
   { content: "ABOUT", href: "/about" },
   { content: "CONTACT", href: "/contact" }
 ]
+
+export const mapsLink = 'https://maps.app.goo.gl/VWUVuZERAweCRv8w7'
 
 export const socialMediaLinks = [
   { content: "INSTAGRAM", href: "https://www.instagram.com/zeniloctavio/" },
@@ -14,8 +16,8 @@ export const socialMediaLinks = [
 
 export const contactDictionary = {
   'location': { name: 'Location', data: '4939 E 29th ST' },
-  'phone': { name: 'Phone number', data: '(520) 622-2706' },
-  'email': { name: 'Email', data: 'lorem@ipsum.com' },
+  'phone': { name: 'Phone number', data: '(520) 613-8371' },
+  'email': { name: 'Email', data: 'stwboot50@gmail.com' },
 
 }
 

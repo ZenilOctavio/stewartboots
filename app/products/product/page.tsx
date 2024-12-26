@@ -6,7 +6,7 @@ import { Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Product } from "../components/Product";
-import { notFound, usePathname, useSearchParams } from "next/navigation";
+import { notFound, redirect, usePathname, useSearchParams } from "next/navigation";
 import products from '@/app/mock/products.json'
 import { useEffect } from "react";
 import { useRouter } from 'next/navigation'
@@ -16,6 +16,8 @@ import clsx from "clsx";
 const searchParamImage = 'image'
 
 export default function ProductPage() {
+  redirect('/')
+
 
   const searchParams = useSearchParams()
   const { replace, refresh } = useRouter()
@@ -62,10 +64,6 @@ export default function ProductPage() {
   if (!product) {
     return notFound()
   }
-
-
-
-
 
   return (
     <div className="flex flex-col-reverse lg:flex-row p-8 gap-10">

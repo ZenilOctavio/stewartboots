@@ -5,7 +5,7 @@ import { MapPin, Phone, Menu } from 'lucide-react'
 import { useState } from "react"
 import clsx from "clsx"
 import { usePathname } from "next/navigation"
-import { websiteNavItems } from "../home/constants"
+import { contactDictionary, mapsLink, websiteNavItems } from "../home/constants"
 
 interface NavbarItemProps {
   content: string
@@ -47,8 +47,8 @@ function ExternalNavbarItem({ content, Icon, ...props }: ExternalNavbarItemProps
 
 
 const externalNavItems = [
-  { content: '4939 E 29th St', target: 'blank', href: 'https://maps.app.goo.gl/VWUVuZERAweCRv8w7', Icon: MapPin },
-  { content: '(520) 622-2706', href: 'tel:(520) 622-2706', Icon: Phone },
+  { content: contactDictionary.location.data, target: 'blank', href: mapsLink, Icon: MapPin },
+  { content: contactDictionary.phone.data, href: `tel${contactDictionary.phone.data}`, Icon: Phone }
 ]
 
 interface NavbarProps {
