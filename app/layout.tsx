@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Roboto, Rye, Pinyon_Script } from "next/font/google";
+import { Playfair_Display, Roboto, Rye } from "next/font/google";
 import "./globals.css";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
