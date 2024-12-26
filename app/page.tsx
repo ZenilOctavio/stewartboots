@@ -2,8 +2,8 @@ import { ArrowUpRight, Footprints, Handshake, PencilRuler, Phone } from "lucide-
 import { Button } from "./ui/Button";
 import Image from "next/image";
 import { HomePageArticle } from "./home/components/HomePageArticle";
-import Link from "next/link";
 import { Testimonial } from "./home/components/Testimonial";
+import { contactDictionary, mapsLink } from "./home/constants";
 
 export default function Home() {
   return (
@@ -17,8 +17,8 @@ export default function Home() {
           <h2 className="text-4xl font-extrabold tracking-widest">Our new location</h2>
           <p>You can call us to make an order and take care of your feet.</p>
           <div className="flex justify-between gap-4">
-            <Button trailingIcon={<ArrowUpRight />} className="flex flex-1 items-center justify-between gap-2">Go to maps</Button>
-            <Button variant="secondary" trailingIcon={<Phone />} className="flex flex-1 items-center justify-between gap-2">Call us</Button>
+            <a className="flex-1" href={mapsLink}><Button trailingIcon={<ArrowUpRight />} className="flex items-center justify-between gap-2">Go to maps</Button></a>
+            <a className="flex-1" href={`tel:${contactDictionary.phone.data}`}><Button variant="secondary" trailingIcon={<Phone />} className="flex items-center justify-between gap-2">Call us</Button></a>
           </div>
         </main>
         <figure className="w-screen md:w-auto">
