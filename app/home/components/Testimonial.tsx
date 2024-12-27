@@ -8,7 +8,7 @@ interface TestimonialProps {
 
 export function Testimonial({ content, name, date }: TestimonialProps) {
   return (
-    <article className="bg-secondary p-6 rounded-md">
+    <article className="bg-secondary w-full h-full p-6 rounded-md">
       <p className="text-sm">{content}</p>
       <footer className="mt-2 flex justify-between">
         <aside>

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { HomePageArticle } from "./home/components/HomePageArticle";
 import { Testimonial } from "./home/components/Testimonial";
 import { contactDictionary, mapsLink } from "./home/constants";
+import { testimonials } from "./home/constants";
 
 export default function Home() {
   return (
@@ -109,29 +110,19 @@ export default function Home() {
         </header>
 
         <main className="mt-6">
-          <ul className="flex flex-col md:flex-row gap-6">
+          <ul className="flex flex-col items-stretch md:flex-row gap-6">
+            {testimonials.map(testimonial => {
+              return (
+                <li key={testimonial.author}>
+                  <Testimonial
+                    name={testimonial.author}
+                    date={''}
+                    content={testimonial.content}
+                  />
+                </li>
+              )
+            })}
 
-            <li>
-              <Testimonial
-                name="Customer name"
-                date="1980"
-                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-              />
-            </li>
-            <li>
-              <Testimonial
-                name="Customer name"
-                date="1980"
-                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-              />
-            </li>
-            <li>
-              <Testimonial
-                name="Customer name"
-                date="1980"
-                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-              />
-            </li>
           </ul>
         </main>
       </section>
