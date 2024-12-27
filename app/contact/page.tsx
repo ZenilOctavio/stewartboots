@@ -33,7 +33,7 @@ export default function ContactPage() {
         </figure>
       </main>
 
-      <section>
+      {/* <section>
         <h2 className="text-2xl font-bold">Follow Us</h2>
         <ul className="flex gap-6 mt-6">
           {
@@ -52,7 +52,7 @@ export default function ContactPage() {
             })
           }
         </ul>
-      </section>
+      </section> */}
 
     </div>
   )
