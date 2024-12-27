@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { socialMediaLinks, websiteNavItems } from "../home/constants";
-import { socialMediaIconMapper } from "../home/constants";
+import { websiteNavItems } from "../home/constants";
+// import { socialMediaIconMapper } from "../home/constants";
 
 
 export function Footer() {
