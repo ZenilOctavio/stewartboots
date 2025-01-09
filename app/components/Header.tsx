@@ -15,7 +15,7 @@ export function Header() {
     >
       <section className="flex flex-col items-center basis-11/12">
         <div className="flex gap-6 items-center"><h2 className="text-primary">Since</h2> <h2 className="text-primary">1940</h2></div>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-custom font-light text-background tracking-widest">Stewart Boot</h1>
+        <h1 className="md:text-5xl sm:text-4xl font-custom text-background tracking-widest">Stewart Boot</h1>
       </section>
       <Navbar className="w-full mt-4 self-end basis-1/12" />
     </header>

@@ -19,7 +19,7 @@ function WebsiteNavbarItem({ content, href, active = false }: NavbarItemProps) {
       href={href}
       className={
         clsx(
-          "capitalize font-pdisplay px-2 pb-1 text-background font-semibold md:text-lg",
+          "capitalize font-pdisplay font-light tracking-widest  px-2 pb-1 text-background  ",
           { "bg-background text-backgroundSecondary md:rounded-t": active }
         )
       }
@@ -118,6 +118,6 @@ export function Navbar({ className = "" }: NavbarProps) {
           }
         </div>
       </ul>
-    </nav>
+    </nav >
   )
 }

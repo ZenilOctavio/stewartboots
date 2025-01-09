@@ -16,7 +16,7 @@ export const socialMediaLinks = [
 
 export const contactDictionary = {
   'location': { name: 'Location', data: '4939 E 29th ST' },
-  'phone': { name: 'Phone number', data: '(520) 613-8371' },
+  'phone': { name: 'Phone number', data: '(520) 622-2706' },
   'email': { name: 'Email', data: 'stwboot50@gmail.com' },
 
 }

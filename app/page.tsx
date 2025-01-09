@@ -5,6 +5,7 @@ import { HomePageArticle } from "./home/components/HomePageArticle";
 import { Testimonial } from "./home/components/Testimonial";
 import { contactDictionary, mapsLink } from "./home/constants";
 import { testimonials } from "./home/constants";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -80,9 +81,9 @@ export default function Home() {
             </figcaption>
           </figure>
         </main>
-        {/* <footer>
+        <footer>
           <Link href="/about/foot-conditions" className="text-sm underline">Discover more foot conditions we treat</Link>
-        </footer> */}
+        </footer>
       </section>
 
       <hr className="border-backgroundSecondary mx-8" />
@@ -96,7 +97,7 @@ export default function Home() {
 
             <p>Each pair is designed for comfort and to eliminate foot pain.</p>
 
-            <p><strong> Prices start at $3,400</strong>. A precise understanding and measurement of your feet take between 2 and 3 hours.</p>
+            <p><strong> Prices start at $3,450</strong>. A precise understanding and measurement of your feet take between 2 and 3 hours.</p>
           </span>
 
         </main>
