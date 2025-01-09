@@ -54,7 +54,7 @@ export default function Home() {
             <li className="self-end">
               <HomePageArticle
                 title="Foot Problems"
-                content={<>We offer solutions for 15 of the most common foot problems. We assure you comfort since the first step.</>}
+                content={<>We offer solutions for 14 of the most common foot problems. We assure you comfort since the first step.</>}
                 Icon={Footprints}
               />
 

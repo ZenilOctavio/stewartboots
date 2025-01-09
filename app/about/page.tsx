@@ -1,7 +1,8 @@
-import { ArrowUpRight, Phone } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Phone } from "lucide-react";
 import { Button } from "../ui/Button";
 import Image from "next/image";
 import { NewLocationMap } from "../components/NewLocationMap";
+import Link from "next/link";
 
 export default function AboutPage() {
 
@@ -25,7 +26,15 @@ export default function AboutPage() {
           <NewLocationMap />
         </figure>
       </article>
+      <Link
+        className="flex gap-2 self-center tracking-tight hover:scale-105 transition-all hover:border-b hover:border-b-foreground"
+        href="/about/foot-conditions"
+      >
+        Check out the foot conditions we can help you with
+        <ArrowRight />
+      </Link>
 
+      <hr />
 
       <section className="flex flex-col gap-16 p-3">
         <div className="flex flex-col md:flex-row gap-8 justify-between items-center">
