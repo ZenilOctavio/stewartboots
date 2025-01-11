@@ -2,7 +2,7 @@ import { FacebookIcon, InstagramIcon } from "@/app/home/icons/SocialMedia";
 import { CircleFadingPlusIcon, Mail, MapPin, Phone } from 'lucide-react'
 export const websiteNavItems = [
   { content: "HOME", href: "/" },
-  // { content: "PRODUCTS", href: "/products" },
+  { content: "OUR DESIGNS", href: "/designs" },
   { content: "ABOUT", href: "/about" },
   { content: "CONTACT", href: "/contact" }
 ]
@@ -10,8 +10,8 @@ export const websiteNavItems = [
 export const mapsLink = 'https://maps.app.goo.gl/VWUVuZERAweCRv8w7'
 
 export const socialMediaLinks = [
-  { content: "INSTAGRAM", href: "https://www.instagram.com/zeniloctavio/" },
-  { content: "FACEBOOK", href: "https://www.facebook.com/octavio.zenillopez/" }
+  { content: "INSTAGRAM", href: "https://www.instagram.com/stewart.boot" },
+  { content: "FACEBOOK", href: "https://www.facebook.com/profile.php?id=61571619759313&mibextid=ZbWKwL" }
 ]
 
 export const contactDictionary = {

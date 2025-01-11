@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "name": "Texas style boots",
+    "name": "Custom Black Riding Boot, made from Horsehide, and Stitching",
     "category": "men",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "description": "Exotic hides, custom-fit boots (made to measure for individuals with special orthopedic needs), or any additional up charges.",
     "images": [
       "/products/boot1-1.png",
       "/products/boot1-2.png",
@@ -12,9 +12,9 @@
   },
   {
     "id": 2,
-    "name": "California style boots",
+    "name": "Roughout Feet and Top Round Toe",
     "category": "men",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "description": "Exotic hides, custom-fit boots (made to measure for individuals with special orthopedic needs), or any additional up charges.",
     "images": [
       "/products/boot2-1.png",
       "/products/boot2-2.png",
@@ -23,9 +23,9 @@
   },
   {
     "id": 3,
-    "name": "New Mexico style boots",
+    "name": "Butter Cup Kid Skin Boot and Stitching",
     "category": "men",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "description": "Exotic hides, custom-fit boots (made to measure for individuals with special orthopedic needs), or any additional up charges.",
     "images": [
       "/products/boot3-1.png",
       "/products/boot3-2.png",
@@ -34,13 +34,93 @@
   },
   {
     "id": 4,
-    "name": "Georgia style boots",
+    "name": "Gray Boot made out Horsehide, with Stitching",
     "category": "men",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "description": "Exotic hides, custom-fit boots (made to measure for individuals with special orthopedic needs), or any additional up charges.",
     "images": [
       "/products/boot4-1.png",
       "/products/boot4-2.png",
       "/products/boot4-3.png"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Snake Skin Boots with inlayed in Snake, with Horsehide Tops",
+    "category": "men",
+    "description": "Exotic hides, custom-fit boots (made to measure for individuals with special orthopedic needs), or any additional up charges.",
+    "images": [
+      "/products/boot5-1.png"
+
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Snake Skin Boots with inlayed in Snake, with Horsehide TopsCustom Python Boot with Horsehide Tops and Fancy Stitching",
+    "category": "men",
+    "description": "Exotic hides, custom-fit boots (made to measure for individuals with special orthopedic needs), or any additional up charges.",
+    "images": [
+      "/products/boot6-1.png"
+
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Caiman Feet with Horsehide Tops, Cuff, and Pulls",
+    "category": "men",
+    "description": "Exotic hides, custom-fit boots (made to measure for individuals with special orthopedic needs), or any additional up charges.",
+    "images": [
+      "/products/boot7-1.png"
+
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Custom Horsehide Boot, with Stitching",
+    "category": "men",
+    "description": "Exotic hides, custom-fit boots (made to measure for individuals with special orthopedic needs), or any additional up charges.",
+    "images": [
+      "/products/boot8-1.png"
+
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Custom Gray Caiman with Black Horsehide Tops, and Stitching",
+    "category": "men",
+    "description": "Exotic hides, custom-fit boots (made to measure for individuals with special orthopedic needs), or any additional up charges.",
+    "images": [
+      "/products/boot9-1.png"
+
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Custom Lady Short Boot made from Horsehide, and Caiman Toe Tip",
+    "category": "men",
+    "description": "Exotic hides, custom-fit boots (made to measure for individuals with special orthopedic needs), or any additional up charges.",
+    "images": [
+      "/products/boot10-1.png"
+
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Custom Brown Stingray Bootin Boot",
+    "category": "men",
+    "description": "Exotic hides, custom-fit boots (made to measure for individuals with special orthopedic needs), or any additional up charges.",
+    "images": [
+      "/products/boot11-1.png"
+
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Custom Black Silver Python with Black Horsehide Tops and Fancy Arizona Flag",
+    "category": "men",
+    "description": "Exotic hides, custom-fit boots (made to measure for individuals with special orthopedic needs), or any additional up charges.",
+    "images": [
+      "/products/boot12-1.png"
+
     ]
   }
 ]

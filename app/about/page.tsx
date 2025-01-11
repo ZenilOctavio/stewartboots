@@ -9,7 +9,7 @@ export default function AboutPage() {
 
   return (
     <div
-      className="py-10 w-full flex flex-col gap-10"
+      className="py-24 w-full flex flex-col gap-10"
     >
       <article
         className="bg-secondary flex flex-col md:flex-row justify-center md:justify-between items-center"
@@ -55,7 +55,8 @@ export default function AboutPage() {
 
         <div className="flex flex-col md:flex-row gap-8  justify-between items-center">
           <main className="basis-1/3">
-            At Steward Boot Company, we have over 50 years of experience delivering handcrafted boots that not only embody quality and style but also provide comfort and solutions for common foot problems. Our expert craftsmanship ensures a perfect fit, addressing issues like bunions, hammertoes, and heel discomfort.
+            <p >First, we&apos;ve moved to a brand-new location to better serve you. Our new space is designed to offer an even more personalized experience, allowing us to continue crafting high-quality orthopedic and custom boots tailored to your needs.</p>
+            <p > Second, we&apos;re introducing a new administration team, committed to enhancing our services and building upon the strong foundation of excellence you&apos;ve come to expect from us. With fresh perspectives and a shared vision for growth, our new leadership is dedicated to ensuring every step with us is as smooth and supportive as possible.</p>
           </main>
           <figure className="basis-1/3">
             <Image

@@ -20,7 +20,7 @@ function WebsiteNavbarItem({ content, href, active = false }: NavbarItemProps) {
       className={
         clsx(
           "capitalize font-pdisplay font-light tracking-widest  px-2 pb-1 text-background  ",
-          { "bg-background text-backgroundSecondary md:rounded-t": active }
+          { "bg-background text-backgroundSecondary font-semibold md:rounded-t": active }
         )
       }
     >{content}</Link>
@@ -38,7 +38,7 @@ interface ExternalNavbarItemProps extends React.AnchorHTMLAttributes<HTMLAnchorE
 function ExternalNavbarItem({ content, Icon, ...props }: ExternalNavbarItemProps) {
 
   return (
-    <a className="flex gap-2 text-background text-xs items-center cursor-pointer md:text-md pb-2" {...props}>
+    <a className="flex gap-2 text-background hover:scale-105 transition-transform items-center cursor-pointer md:text-md pb-2" {...props}>
       <Icon className="w-5 h-5" />
       <span>{content}</span>
     </a>
@@ -77,7 +77,7 @@ export function Navbar({ className = "" }: NavbarProps) {
           clsx(
             "flex flex-col gap-4 absolute top-16 right-0 p-5 w-screen bg-backgroundSecondary",
             { "hidden": !isOpen },
-            "md:flex md:flex-row md:static md:p-0 md:w-auto"
+            "md:flex md:flex-row md:static md:p-0 md:w-auto md:items-end"
           )
         }
 

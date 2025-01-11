@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="py-10 w-full flex flex-col gap-10">
+    <div className="py-24 w-full flex flex-col gap-10">
       <h3 className="font-light text-xl md:text-3xl text-center"><i className="font-pdisplay">&quot;Footware designed to the proper care of your feet&quot;</i></h3>
 
       <article
@@ -97,7 +97,7 @@ export default function Home() {
 
             <p>Each pair is designed for comfort and to eliminate foot pain.</p>
 
-            <p><strong> Prices start at $3,450</strong>. A precise understanding and measurement of your feet take between 2 and 3 hours.</p>
+            <p><strong> Prices start at $3,450</strong>. A precise understanding and measurement of your feet takes between 2 and 3 hours.</p>
           </span>
 
         </main>

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { websiteNavItems } from "../home/constants";
-// import { socialMediaIconMapper } from "../home/constants";
+import { socialMediaLinks, websiteNavItems } from "../home/constants";
+import { socialMediaIconMapper } from "../home/constants";
 
 
 export function Footer() {
@@ -25,7 +25,7 @@ export function Footer() {
           }
         </ul>
       </section>
-      {/* <section className="pt-4 md:pt-0 border border-t-foreground border-l-0 md:border-l-foreground md:border-l md:border-t-0 border-b-0 border-r-0 px-5 basis-2/6">
+      <section className="pt-4 md:pt-0 border border-t-foreground border-l-0 md:border-l-foreground md:border-l md:border-t-0 border-b-0 border-r-0 px-5 basis-2/6">
         <h3 className="text-lg font-semibold">Social Media</h3>
         <ul className="mt-2 flex flex-col gap-2">
           {
@@ -42,7 +42,7 @@ export function Footer() {
             })
           }
         </ul>
-      </section> */}
+      </section>
     </footer>
   )
 }

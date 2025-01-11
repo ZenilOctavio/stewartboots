@@ -1,13 +1,14 @@
 import { ContactItem } from "./components/ContactItem";
 import { NewLocationMap } from "../components/NewLocationMap";
 // import { RoundedIcon } from "../components/RoundedIcon";
-import { contactData, contactDataIconMapper } from "../home/constants";
+import { contactData, contactDataIconMapper, socialMediaIconMapper, socialMediaLinks } from "../home/constants";
+import { RoundedIcon } from "../components/RoundedIcon";
 // import { socialMediaIconMapper } from "../home/constants";
 
 export default function ContactPage() {
   return (
     <div
-      className="py-10 w-full flex flex-col gap-10 px-10 pt-20"
+      className="py-10 w-full flex flex-col gap-10 px-10 pt-24"
     >
       <h1 className="text-4xl font-extrabold tracking-widest text-center">Contact Us</h1>
       <p className="text-center">At Steward Boot Company, we believe that exceptional customer service begins with personal, direct communication. Whether you need advice on finding the perfect fit or have questions about our orthopedic solutions, we’re here to help.</p>
@@ -33,7 +34,7 @@ export default function ContactPage() {
         </figure>
       </main>
 
-      {/* <section>
+      <section>
         <h2 className="text-2xl font-bold">Follow Us</h2>
         <ul className="flex gap-6 mt-6">
           {
@@ -52,7 +53,7 @@ export default function ContactPage() {
             })
           }
         </ul>
-      </section> */}
+      </section>
 
     </div>
   )

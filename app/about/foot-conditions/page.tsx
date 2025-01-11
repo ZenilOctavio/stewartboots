@@ -119,7 +119,7 @@ export default function FootConditionsPage() {
   // redirect('/')
 
   return (
-    <div className="pt-20 w-full flex flex-col gap-10 py-16">
+    <div className="pt-24 w-full flex flex-col gap-10 py-16">
 
       <section className="bg-secondary  flex flex-col-reverse items-center md:flex-row justify-between">
         <main className="md:px-20 px-4 md:py-10 py-4 md:basis-1/3 order-2 md:order-1">
