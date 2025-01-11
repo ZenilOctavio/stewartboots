@@ -22,7 +22,7 @@ export function Header() {
           height={150}
         />
       </section>
-      <Navbar className="w-full mt-4 self-end basis-1/12" />
+      <Navbar className="w-full mt-14 self-end basis-1/12" />
     </header>
   )
 }
