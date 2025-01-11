@@ -88,6 +88,7 @@ export function Navbar({ className = "" }: NavbarProps) {
             return (
               <li
                 key={item.href}
+                onClick={toggleIsOpen}
               >
                 <WebsiteNavbarItem
                   {...item}

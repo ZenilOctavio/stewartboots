@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="py-24 w-full flex flex-col gap-10">
+    <div className="py-24 px-2 items-center w-full flex flex-col gap-10">
       <h3 className="font-light text-xl md:text-3xl text-center"><i className="font-pdisplay">&quot;Footware designed to the proper care of your feet&quot;</i></h3>
 
       <article
@@ -42,8 +42,8 @@ export default function Home() {
           <h6 className="font-roboto text-xs">OUR SERVICE</h6>
           <h2 className="text-xl md:text-3xl font-extrabold">Why choose Stewart Boot?</h2>
         </header>
-        <main className="w-full flex flex-col md:flex-row justify-between pt-4">
-          <ul className="flex flex-col md:flex-row justify-between w-full gap-4 pl-5">
+        <main className="w-full flex flex-col items-center md:flex-row justify-between pt-4">
+          <ul className="flex flex-col items-center md:flex-row justify-between w-full gap-4 md:pl-5">
             <li>
               <HomePageArticle
                 title="The perfect fit"
