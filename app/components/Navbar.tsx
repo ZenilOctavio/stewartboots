@@ -48,7 +48,7 @@ function ExternalNavbarItem({ content, Icon, ...props }: ExternalNavbarItemProps
 
 const externalNavItems = [
   { content: contactDictionary.location.data, target: 'blank', href: mapsLink, Icon: MapPin },
-  { content: contactDictionary.phone.data, href: `tel${contactDictionary.phone.data}`, Icon: Phone }
+  { content: contactDictionary.phone.data, href: `tel:${contactDictionary.phone.data}`, Icon: Phone }
 ]
 
 interface NavbarProps {
