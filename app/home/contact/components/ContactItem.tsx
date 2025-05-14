@@ -1,4 +1,4 @@
-import { RoundedIcon } from "../../components/RoundedIcon";
+import { RoundedIcon } from "@/app/components/RoundedIcon"
 
 interface ContactItemProps {
   Icon: React.FC<React.SVGProps<SVGSVGElement>>

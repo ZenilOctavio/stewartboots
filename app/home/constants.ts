@@ -1,10 +1,10 @@
 import { FacebookIcon, InstagramIcon } from "@/app/home/icons/SocialMedia";
 import { CircleFadingPlusIcon, Mail, MapPin, Phone } from 'lucide-react'
 export const websiteNavItems = [
-  { content: "HOME", href: "/" },
-  { content: "OUR DESIGNS", href: "/designs" },
-  { content: "ABOUT", href: "/about" },
-  { content: "CONTACT", href: "/contact" }
+  { content: "HOME", href: "/home" },
+  { content: "OUR DESIGNS", href: "/home/designs" },
+  { content: "ABOUT", href: "/home/about" },
+  { content: "CONTACT", href: "/home/contact" }
 ]
 
 export const mapsLink = 'https://maps.app.goo.gl/VWUVuZERAweCRv8w7'
@@ -101,7 +101,7 @@ manufacturing customized
 boots. Victor is very
 meticulous tracing your feet
 and identifying feet
-issues.Linda is very
+issues. Linda is very
 knowledgeable about the
 various type of leather and
 what will work best based
@@ -122,7 +122,7 @@ comfortable as the first day.`
     and fell in love with the
     workmanship of their hand
     made boots. Been wearing
-    them since 7980. have gone
+    them since 1980. Have gone
     through several pairs. Only
     boots that ever fit my wide
     feet. Still have two pairs in

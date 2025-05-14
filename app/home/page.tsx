@@ -1,10 +1,10 @@
 import { ArrowUpRight, Footprints, Handshake, PencilRuler, Phone } from "lucide-react";
-import { Button } from "./ui/Button";
+import { Button } from "../ui/Button";
 import Image from "next/image";
-import { HomePageArticle } from "./home/components/HomePageArticle";
-import { Testimonial } from "./home/components/Testimonial";
-import { contactDictionary, mapsLink } from "./home/constants";
-import { testimonials } from "./home/constants";
+import { HomePageArticle } from "./components/HomePageArticle";
+import { Testimonial } from "./components/Testimonial";
+import { contactDictionary, mapsLink } from "./constants";
+import { testimonials } from "./constants";
 import Link from "next/link";
 
 export default function Home() {
@@ -61,7 +61,7 @@ export default function Home() {
             </li>
             <li>
               <HomePageArticle
-                title="Maturity"
+                title="Experience"
                 content="With over 50 years of experience, we specialize in treating these foot problems and delivering thoughtfully designed solutions that prioritize comfort and performance."
                 Icon={Handshake}
               />

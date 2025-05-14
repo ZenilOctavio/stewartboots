@@ -84,7 +84,6 @@ export function Navbar({ className = "" }: NavbarProps) {
       >
         {
           websiteNavItems.map(item => {
-            console.log(pathname)
             return (
               <li
                 key={item.href}

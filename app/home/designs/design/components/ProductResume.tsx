@@ -16,7 +16,6 @@ export function ProductResume({ className = "" }: ProductResumeProps) {
   const searchParams = useSearchParams()
   const id = Number(searchParams.get('id'))
   const product = products.find(product => product.id == id)
-  console.log(products)
 
   if (!product) {
     return notFound()

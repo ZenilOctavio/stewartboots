@@ -1,7 +1,7 @@
 import { ArrowRight, ArrowUpRight, Phone } from "lucide-react";
-import { Button } from "../ui/Button";
+import { Button } from "../../ui/Button";
 import Image from "next/image";
-import { NewLocationMap } from "../components/NewLocationMap";
+import { NewLocationMap } from "../../components/NewLocationMap";
 import Link from "next/link";
 
 export default function AboutPage() {

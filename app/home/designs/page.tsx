@@ -24,7 +24,7 @@ export default function ProductsPage() {
               products.map(product => {
                 return (
                   <li key={product.name}>
-                    <Link href={`/designs/design?id=${product.id}`}>
+                    <Link href={`/home/designs/design?id=${product.id}`}>
                       <Product name={product.name} description={product.description} imageSrc={product.images[0]} />
                     </Link>
                   </li>

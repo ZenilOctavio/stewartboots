@@ -1,9 +1,8 @@
 import { ContactItem } from "./components/ContactItem";
-import { NewLocationMap } from "../components/NewLocationMap";
-// import { RoundedIcon } from "../components/RoundedIcon";
-import { contactData, contactDataIconMapper, socialMediaIconMapper, socialMediaLinks } from "../home/constants";
-import { RoundedIcon } from "../components/RoundedIcon";
-// import { socialMediaIconMapper } from "../home/constants";
+import { NewLocationMap } from "@/app/components/NewLocationMap";
+import { contactData, contactDataIconMapper } from "../constants";
+import { socialMediaIconMapper, socialMediaLinks } from "../constants";
+import { RoundedIcon } from "@/app/components/RoundedIcon";
 
 export default function ContactPage() {
   return (

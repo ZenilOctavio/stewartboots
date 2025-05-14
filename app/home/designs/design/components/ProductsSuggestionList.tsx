@@ -1,7 +1,7 @@
 'use client'
 import products from '@/app/mock/products.json'
 import Link from 'next/link'
-import { Product } from '@/app/designs/components/Product'
+import { Product } from '@/app/home/designs/components/Product'
 import { useSearchParams } from 'next/navigation'
 
 

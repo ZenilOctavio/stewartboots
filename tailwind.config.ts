@@ -22,6 +22,14 @@ export default {
         slideInRight: "slide-in-right 0.5s ease-in-out",
         slideOutLeft: "slideOutLeft 0.5s ease-in-out",
         slideOutRight: "slide-out-right 0.5s ease-in-out 0s forwards",
+      },
+      gridTemplateColumns: {
+        "auto-fit-8": "repeat(auto-fit, minmax(8rem, 1fr))",
+        "auto-fit-10": "repeat(auto-fit, minmax(10rem, 1fr))",
+        "auto-fit-12": "repeat(auto-fit, minmax(12rem, 1fr))",
+        "auto-fit-14": "repeat(auto-fit, minmax(14rem, 1fr))",
+        "auto-fit-16": "repeat(auto-fit, minmax(16rem, 1fr))"
+
       }
     },
     fontFamily: {
