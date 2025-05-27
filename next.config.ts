@@ -9,16 +9,16 @@ const nextConfig: NextConfig = {
         destination: '/home',
         permanent: true
       },
-      {
-        source: '/admin/:som',
-        destination: '/home',
-        permanent: true
-      },
-      {
-        source: '/admin',
-        destination: '/home',
-        permanent: true
-      }
+      // {
+      //   source: '/admin/:som',
+      //   destination: '/home',
+      //   permanent: true
+      // },
+      // {
+      //   source: '/admin',
+      //   destination: '/home',
+      //   permanent: true
+      // }
     ]
   }
 };

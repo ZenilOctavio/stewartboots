@@ -17,7 +17,7 @@ export default function AdminTestimonialsPage (){
                   className="object-contain"
                   width="560" 
                   height="315" 
-                  src="https://www.youtube.com/embed/fj9_XXzIXwA?si=ok9lvOsV4QL2X3HC&autoplay=1&loop=1&controls=0&showinfo=0&modestbranding=0&rel=0" 
+                  src={`https://www.youtube.com/embed/fj9_XXzIXwA?si=ok9lvOsV4QL2X3HC&autoplay=${v == 1? 1 : 0}&loop=1&controls=0&showinfo=0&modestbranding=0&rel=0`}
                   title="YouTube video player" 
                   allow=" 
                   autoplay; 
