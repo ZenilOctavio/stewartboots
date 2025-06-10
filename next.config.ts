@@ -1,14 +1,15 @@
+import BuilderDevTools from "@builder.io/dev-tools/next";
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
+const nextConfig: NextConfig = BuilderDevTools()({
   /* config options here */
   async redirects() {
     return [
-      {
-        source: '/',
-        destination: '/home',
-        permanent: true
-      },
+      // {
+      //   source: "/",
+      //   destination: "/home",
+      //   permanent: true,
+      // },
       // {
       //   source: '/admin/:som',
       //   destination: '/home',
@@ -19,8 +20,8 @@ const nextConfig: NextConfig = {
       //   destination: '/home',
       //   permanent: true
       // }
-    ]
-  }
-};
+    ];
+  },
+});
 
 export default nextConfig;
