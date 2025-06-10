@@ -1,4 +1,5 @@
 'use client'
+// Template
 import {BuilderComponent, builder} from '@builder.io/react'
 import '@/builder-registry'
 
