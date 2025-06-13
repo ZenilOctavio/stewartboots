@@ -8,7 +8,7 @@ interface ProductProps {
 
 export function Product({ name, imageSrc }: ProductProps) {
   return (
-    <article className="rounded-xl p-4 hover:scale-105 transition-all hover:border-2 overflow-hidden">
+    <article className="relative p-4 group hover:scale-105 transition-all hover:border-[1px] hover:border-slate-700 hover:shadow-md overflow-hidden hover:z-10 bg-background">
       <figure className="bg-white p-2 aspect-square">
         <Image
           className="w-full h-full object-contain"
@@ -17,11 +17,12 @@ export function Product({ name, imageSrc }: ProductProps) {
           src={imageSrc}
           alt={name}
         />
-      </figure >
-      <footer>
-        <h6 className="font-roboto font-bold h-5 overflow-hidden overflow-ellipsis">{name}</h6>
-        {/* <p className="font-light text-sm max-h-[2.3rem] overflow-ellipsis overflow-hidden">{description}</p> */}
+      </figure>
+      <footer className="mt-2">
+        <h6 className="font-roboto font-light line-clamp-2 max-h-[3rem] group-hover:line-clamp-none group-hover:max-h-[10rem] transition-[max-height] duration-300 ease-in-out overflow-hidden">
+          {name}
+        </h6>
       </footer>
-    </article >
+    </article>
   )
 }

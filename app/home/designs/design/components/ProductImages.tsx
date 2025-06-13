@@ -2,10 +2,11 @@
 
 import clsx from "clsx"
 import Image from "next/image"
-import React, { useEffect } from "react"
-import products from '@/app/mock/products.json'
+import React, { useEffect, useState } from "react"
 import { notFound, usePathname, useSearchParams } from "next/navigation"
 import { useRouter } from "next/navigation"
+import { AppProduct, BuilderProduct, builderProductToAppProduct } from "../../types"
+import { builder } from "@builder.io/sdk"
 
 
 
@@ -21,13 +22,44 @@ export function ProductImages({ className }: ProductImagesProps) {
 
   const searchParams = useSearchParams()
   const currentImage = Number(searchParams.get(searchParamImage))
-  const id = Number(searchParams.get('id'))
+  const id = searchParams.get('id')
   const { replace, refresh } = useRouter()
   const pathname = usePathname()
+  
+  const [product, setProduct] = useState<AppProduct | null>(null)
+  const [loading, setLoading] = useState(true)
+
+
+  builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY!);
 
   useEffect(() => {
     replace(`${pathname}?id=${id}&image=0`)
   }, [])
+
+    useEffect(() => {
+      if (!id) {
+        return
+      }
+
+      setLoading(true)
+
+      builder.get('products', {query: {id: id}})
+      .then(response => {
+        
+        if (!response) {
+          setLoading(false)
+          setProduct(null)
+          return
+        }
+
+        const builderProduct = {...response.data, id: response.id} as BuilderProduct
+        const productResponse = builderProductToAppProduct(builderProduct)
+        setProduct(productResponse)
+        setLoading(false)
+      })
+      
+  
+    }, [id])
 
   const handleSetImage = (imageIndex: number) => {
     const params = new URLSearchParams(searchParams)
@@ -49,11 +81,15 @@ export function ProductImages({ className }: ProductImagesProps) {
     refresh()
   }
 
-  const product = products.find(product => product.id === id)
 
-  if (!product) {
+  if (!product && !loading) {
     return notFound()
   }
+
+  if (!id && !loading) {
+    return notFound()
+  }
+
   return (
     <section className={className}>
       <figure className="bg-white p-2 aspect-square col-start-1 row-start-1 col-end-4 row-end-4 ">
@@ -62,18 +98,18 @@ export function ProductImages({ className }: ProductImagesProps) {
             <div className="bg-white"></div>
           }
         >
-          <Image
+          {product && <Image
             className="w-full h-full object-contain"
             width={800}
             height={800}
-            src={product.images[currentImage]}
+            src={product?.images[currentImage]}
             alt="boot"
-          />
+          />}
         </React.Suspense>
       </figure >
 
       <div className="flex gap-4 col-start-1 col-end-4 row-start-4 row-end-5 overflow-hidden">
-        {product.images.map((image, index) => {
+        {product?.images.map((image, index) => {
           return (
             <figure
               key={image}

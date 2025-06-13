@@ -1,8 +1,7 @@
-import { ArrowRight, ArrowUpRight, Phone } from "lucide-react";
-import { Button } from "../../ui/Button";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import { NewLocationMap } from "../../components/NewLocationMap";
 import Link from "next/link";
+import { NewLocationAdvice } from "./components/NewLocation";
 
 export default function AboutPage() {
 
@@ -11,24 +10,14 @@ export default function AboutPage() {
     <div
       className="py-24 w-full flex flex-col gap-10"
     >
-      <article
-        className="bg-secondary flex flex-col md:flex-row justify-center md:justify-between items-center"
-      >
-        <main className="flex flex-col gap-2 justify-between p-4 md:p-10">
-          <h2 className="text-4xl font-extrabold tracking-widest">Our new location</h2>
-          <p>You can call us to make an order and take care of your feet.</p>
-          <div className="flex justify-between gap-4">
-            <Button trailingIcon={<ArrowUpRight />} className="flex flex-1 items-center justify-between gap-2">Go to maps</Button>
-            <Button variant="secondary" trailingIcon={<Phone />} className="flex flex-1 items-center justify-between gap-2">Call us</Button>
-          </div>
-        </main>
-        <figure className="p-4 md:p-10 basis-1/3 h-96 md:w-auto">
-          <NewLocationMap />
-        </figure>
-      </article>
+      <NewLocationAdvice
+        title="Our new location"
+        content="You can call us to make an order and take care of your feet."
+      />
+      
       <Link
         className="flex gap-2 self-center tracking-tight hover:scale-105 transition-all hover:border-b hover:border-b-foreground"
-        href="/about/foot-conditions"
+        href="/home/about/foot-conditions"
       >
         Check out the foot conditions we can help you with
         <ArrowRight />

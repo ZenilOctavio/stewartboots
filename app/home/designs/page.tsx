@@ -1,11 +1,22 @@
-import Link from "next/link"
-import { Product } from "./components/Product"
-import products from '@/app/mock/products.json'
-import { ChevronLeft, ChevronRight } from "lucide-react"
-import { NavigationButton } from "./components/NavigationButton"
+import React from "react"
+import { builder } from "@builder.io/sdk"
+import { BuilderCategory, BuilderProduct, builderProductToAppProduct } from "./types"
+import { CategoriesList } from "./design/components/CategoriesList"
+import { Products } from "./design/components/Products"
 
-export default function ProductsPage() {
 
+
+export default async function ProductsPage() {
+
+  builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY!);
+
+  const categoryResponse = (await builder.getAll('category'))
+  const builderCategories = categoryResponse.map(catResponse => ({...catResponse.data, id: catResponse.id})) as BuilderCategory[]
+
+  const productResponse = await builder.getAll('products')
+  const builderProducts = productResponse.map((builderResponse) => ({...builderResponse.data, id: builderResponse.id}) as BuilderProduct)
+
+  const products = builderProducts.map((builderProduct) => builderProductToAppProduct(builderProduct))
 
   return (
     <div
@@ -13,35 +24,16 @@ export default function ProductsPage() {
     >
       <section className="flex flex-col gap-2 md:gap-4 md:pl-6 border-r border-primary">
         <h1 className="font-roboto font-bold text-lg text-center md:text-left">CATEGORIES</h1>
-        <ul className="flex md:flex-col gap-2">
-          <li className="text-sm font-semibold"><Link href="/products">Shoes</Link></li>
-        </ul>
+        <React.Suspense fallback={<div>Loading...</div>}>
+          <CategoriesList categories={builderCategories}/> 
+        </React.Suspense>
       </section>
       <section className="">
         <main>
-          <ul className="grid grid-cols-2 md:grid-cols-3 gap-4 lg:grid-cols-4 xl:grid-cols-5 px-10">
-            {
-              products.map(product => {
-                return (
-                  <li key={product.name}>
-                    <Link href={`/home/designs/design?id=${product.id}`}>
-                      <Product name={product.name} description={product.description} imageSrc={product.images[0]} />
-                    </Link>
-                  </li>
-                )
-              })
-            }
-          </ul>
-          <footer className="flex mt-3 justify-between items-center px-10">
-            <div className="flex items-center gap-2">
-              <NavigationButton className="basis-1/4" variant="disabled"><ChevronLeft /></NavigationButton>
-              <NavigationButton className="basis-1/4" variant="default">01</NavigationButton>
-              <NavigationButton className="basis-1/4" variant="disabled"><ChevronRight /></NavigationButton>
-            </div>
-            <div>
-              <span className="font-light">SHOWING 1 - {products.length} OF {products.length} RESULTS</span>
-            </div>
-          </footer>
+          <React.Suspense fallback={<div>Loading...</div>}>
+            <Products products={products} categories={builderCategories}/>
+          </React.Suspense>
+
         </main>
       </section>
     </div>
