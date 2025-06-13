@@ -5,7 +5,7 @@ import { CategoriesList } from "./design/components/CategoriesList"
 import { Products } from "./design/components/Products"
 
 
-
+export const dynamic = 'force-dynamic'
 export default async function ProductsPage() {
 
   builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY!);
