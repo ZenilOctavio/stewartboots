@@ -16,11 +16,11 @@ const nextConfig: NextConfig = BuilderDevTools()({
   },
   async redirects() {
     return [
-      // {
-      //   source: "/",
-      //   destination: "/home",
-      //   permanent: true,
-      // },
+      {
+        source: "/",
+        destination: "/home",
+        permanent: true,
+      }
       // {
       //   source: '/admin/:som',
       //   destination: '/home',
